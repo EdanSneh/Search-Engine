@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Search Test</title>
+		<!-- <link rel="icon" type="image/png" sizes="16x16" href="favicon-96x96.png"> -->
+		<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+		
+		<!-- css -->
+		<link href="style.css" rel="stylesheet">
+
+		<!-- Jquery -->
+		<script src="jquery.js"></script>
+
+	</head>
+	<body>
+		<div id="smh" class="classy">
+			Apple
+		</div>
+
+		<script>
+		function find() {
+		    var x = document.getElementById('search').value;
+		 	//var y = document.getElementbyId('smh').innerHTML.indexOf(x) != -1
+			var divs= document.getElementsByClassName('classy');
+			//alert(divs[0].innerHTML.indexOf(x));
+		   if(x==""){
+		   	return false;
+		   }
+		   else if(divs[0].innerHTML.indexOf(x) != -1){
+		   		alert("Condition Met");
+		   		$("#smh").toggleClass("toggled");
+		   		$("#searhing").submit(function(e) {
+    				e.preventDefault();
+				});
+
+		   }
+		}
+		</script>
+
+		<form id="searching" onsubmit="return find();">
+		<input id="search" type="text" />
+		<input type="submit" value="Search">
+		</form>
+	</body>
+</html>

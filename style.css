@@ -1,0 +1,8 @@
+#smh{
+	display:all;
+	width:100px;
+	height:100px;
+}
+#smh.toggled{
+	display:none;
+}
