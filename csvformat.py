@@ -42,5 +42,5 @@ with open('form.csv', 'rb') as csvfile:
  			+", 'collegeName': '"+strcollege
  			+"', 'students': "+str(college[strcollege])+"},")
  	
-
+print("];")
 	 		# for col in row:
