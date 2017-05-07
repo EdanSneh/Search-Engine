@@ -6,3 +6,12 @@
 #smh.toggled{
 	display:none;
 }
+
+#smh2{
+	display:all;
+	width:100px;
+	height:100px;
+}
+#smh2.toggled{
+	display:none;
+}
